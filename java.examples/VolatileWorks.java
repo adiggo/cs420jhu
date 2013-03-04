@@ -20,12 +20,10 @@ class VolatileWorks implements Runnable
   // Run: overides Runnabale.Run, thread entry point
   public void run ()
   {
-    System.out.println ( thread_id + ": Running thread" );
     for ( int i=0; i<10000000; i++ )
     {
       sharedvar++;
     }
-    System.out.println ( thread_id + ": Finished phase 1" );
     for ( int i=0; i<10000000; i++ )
     {
       sharedvolvar++;
